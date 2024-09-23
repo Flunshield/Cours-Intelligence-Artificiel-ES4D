@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import ReactMarkdown from "react-markdown";
 
 // Configure l'API avec ta clé
 const genAI = new GoogleGenerativeAI("AIzaSyAY_MXTPpBFXMMp4tJ0MA_uR5B76FvqrAw"); // Clé API Gemini
@@ -70,7 +71,11 @@ const ChatBox: React.FC = () => {
               msg.sender === "user" ? "bg-blue-500 text-white" : "bg-gray-300"
             }`}
           >
-            {msg.text}
+            {msg.sender === "bot" ? (
+              <ReactMarkdown>{msg.text}</ReactMarkdown> // Rendre le texte en Markdown
+            ) : (
+              msg.text
+            )}
           </div>
         ))}
       </div>

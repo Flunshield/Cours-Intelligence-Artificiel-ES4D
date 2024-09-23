@@ -1,104 +1,118 @@
-<p align='center'>
-  <img src='https://i.imgur.com/KVmyXyo.png' alt='Vital - Vite Starter Template' width='600'/>
-</p>
+# Chatbox - Fitness Coach (avec API Gemini)
 
-<p align='center'>
-Mocking up web app with <b>Vital</b><sup><em>(speed)</em></sup><br>
-</p>
+Ce projet est une application de chat simple qui utilise l'API Gemini de Google pour fournir des conseils sur le fitness. L'IA est configurée pour jouer le rôle d'un coach sportif et ne répond qu'aux questions liées au fitness. Si une question hors sujet est posée, la réponse du bot sera méchante et désagréable. Les réponses du bot sont formatées en Markdown pour une mise en forme agréable dans l'interface.
 
-<br>
+## Prérequis
 
-<p align='center'>
-<a href="https://vital.josepvidal.dev">Live Demo</a>
-</p>
+Avant de démarrer, assurez-vous d'avoir installé les éléments suivants :
 
-<br>
+1. **Node.js** - Utilisez la version 14 ou supérieure.
+2. **NPM** - Gestionnaire de paquets Node.js.
+3. **Clé API Google Generative AI (Gemini)** - Vous aurez besoin d'une clé API pour interagir avec le modèle de génération de texte.
 
-## Features
+## Installation
 
-- ⚡️ [React 18](https://beta.reactjs.org/)
-- 🦾 TypeScript, of course
-- 🫀 [Vitest](https://vitest.dev/) - unitary testing made easy
-- 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
-- 👑 [Atomic Design organization](https://bradfrost.com/blog/post/atomic-web-design/)
-- 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
-- 😃 [Hero icons](https://heroicons.com/)
-- ☁️ Deploy on Netlify, zero-config
+1. Clonez ce dépôt :
 
-### Coding Style
+   ```bash
+   git clone https://github.com/ton-compte/chatbox-fitness-coach.git
+   cd chatbox-fitness-coach
+   ```
 
-- [ESLint](https://eslint.org/) - configured for React/Hooks & TypeScript
-- [Prettier](https://prettier.io/)
-
-### Dev tools
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [Commit lint](https://github.com/conventional-changelog/commitlint) - helps your team adhering to a commit convention
-- [Netlify](https://www.netlify.com/) - zero-config deployment
-
-## Try it now!
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/jvidalv/vital/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+2. Installez les dépendances du projet :
 
 ```bash
-npx degit jvidalv/vital my-vital-app
-cd my-vital-app
-yarn # If you don't have yarn installed, run: npm install -g yarn
+yarn
 ```
 
-## Checklist
+## Configuration
+Avant de lancer l'application, vous devez configurer votre clé API Google Gemini. Remplacez la chaîne de caractères CLE_API_GEMINI dans le fichier ChatBox.tsx par votre propre clé API.
 
-When you use this template, try follow the checklist to update your info properly
+```bash
+const genAI = new GoogleGenerativeAI("CLE_API_GEMINI"); // Remplacez ici par votre clé API
+```
 
-- [ ] Rename `name` and `author` fields in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
-- [ ] Change the favicon in `public`
-- [ ] Modify the manifest in `public`
-- [ ] Clean up the README's
+## Structure du Code
 
-And, enjoy :)
+Le code est basé sur **React** et utilise la bibliothèque **react-markdown** pour interpréter les réponses de l'IA en Markdown. Voici une brève explication des composants :
 
-## Usage
+### `ChatBox.tsx`
 
-### Development
+- **State Management** : Utilisation de `useState` pour gérer les messages du chat et l'entrée utilisateur.
+  
+- **handleSend** : Fonction appelée lorsqu'un utilisateur envoie un message. Elle :
+  - Ajoute le message de l'utilisateur à la liste des messages.
+  - Envoie la requête à l'API Gemini avec un prompt spécifique pour fournir des conseils fitness ou une réponse méchante si la question n'est pas en rapport avec le fitness.
+  - Ajoute la réponse de l'IA à la liste des messages.
 
-Just run and visit http://127.0.0.1:3000/
+- **fetchGeminiResponse** : Envoie la requête à l'API Gemini en incluant le contexte du coach sportif dans le prompt. Les réponses sont limitées à 500 tokens et sont générées avec une température de 0.5 pour ajuster la créativité.
+
+### Affichage Markdown
+
+Les réponses du bot sont interprétées et affichées en Markdown grâce à la bibliothèque **react-markdown** :
+
+```javascript
+<ReactMarkdown>{msg.text}</ReactMarkdown>
+```
+
+Cela permet au bot de renvoyer des réponses formatées (titres, listes, emphases, etc.) dans l'interface.
+
+## Lancement de l'application
+Une fois que tout est installé et configuré, vous pouvez lancer l'application en utilisant la commande suivante :
 
 ```bash
 yarn dev
 ```
 
-### Build
 
-To build the App, run
+markdown
+Copier le code
+## Structure du Code
 
-```bash
-yarn build
+Le code est basé sur **React** et utilise la bibliothèque **react-markdown** pour interpréter les réponses de l'IA en Markdown. Voici une brève explication des composants :
+
+### `ChatBox.tsx`
+
+- **State Management** : Utilisation de `useState` pour gérer les messages du chat et l'entrée utilisateur.
+  
+- **handleSend** : Fonction appelée lorsqu'un utilisateur envoie un message. Elle :
+  - Ajoute le message de l'utilisateur à la liste des messages.
+  - Envoie la requête à l'API Gemini avec un prompt spécifique pour fournir des conseils fitness ou une réponse méchante si la question n'est pas en rapport avec le fitness.
+  - Ajoute la réponse de l'IA à la liste des messages.
+
+- **fetchGeminiResponse** : Envoie la requête à l'API Gemini en incluant le contexte du coach sportif dans le prompt. Les réponses sont limitées à 500 tokens et sont générées avec une température de 0.5 pour ajuster la créativité.
+
+### Affichage Markdown
+
+Les réponses du bot sont interprétées et affichées en Markdown grâce à la bibliothèque **react-markdown** :
+
+```javascript
+<ReactMarkdown>{msg.text}</ReactMarkdown>
 ```
+Cela permet au bot de renvoyer des réponses formatées (titres, listes, emphases, etc.) dans l'interface.
 
-And you will see the generated file in `dist` that ready to be served.
+Lancement de l'application
+Une fois que tout est installé et configuré, vous pouvez lancer l'application en utilisant la commande suivante :
 
-### Deploy on Netlify
+bash
+Copier le code
+npm start
+Cela lancera le projet en mode développement. Ouvrez http://localhost:3000 pour voir l'application dans votre navigateur.
 
-Go to [Netlify](https://app.netlify.com/start) and select your repository, `OK` along the way, and your App will be live in a minute.
+## Fonctionnalités
+- Coach de Fitness : Le bot répond aux questions sur le fitness et donne des conseils pertinents.
+- Réponses Méchantes : Si la question n'est pas liée au fitness, le bot répondra de manière désagréable et sarcastique.
+- Affichage Markdown : Les réponses du bot sont formatées en Markdown pour une meilleure lisibilité.
 
-### Issues
+### Exemple d'utilisation
+- Question liée au fitness :
+    - Utilisateur : "Quels exercices puis-je faire pour améliorer mes abdominaux ?"
+    - Bot : "Pour des abdos en béton, fais des crunchs, des planches et des levées de jambes. Essaie d'en faire 3 séries de 15 répétitions chaque jour ! 💪"
 
-#### Husky
+- Question hors sujet :
+  - Utilisateur : "Quel est le capital de la France ?"
+  - Bot : "T’es sérieux là ? Je suis un coach sportif, pas un prof de géo. Demande-moi quelque chose d'utile !"
 
-If pre-commit hooks are not working be sure that you have installed husky: `husky install`.
+  ----
 
-By default this command should be triggered after yarn/npm deps are installed.
-
-## Why
-
-I have created several React apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
+  Ce fichier README.md explique le processus du code, la configuration et les fonctionnalités de l'application de chat basée sur un coach de fitness avec l'API Gemini.
