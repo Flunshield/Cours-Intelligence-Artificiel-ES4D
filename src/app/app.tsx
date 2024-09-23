@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Configure l'API avec ta clé
-const genAI = new GoogleGenerativeAI("AIzaSyAY_MXTPpBFXMMp4tJ0MA_uR5B76FvqrAw"); // CLEF API GEMINI
+const genAI = new GoogleGenerativeAI("AIzaSyAY_MXTPpBFXMMp4tJ0MA_uR5B76FvqrAw"); // Clé API Gemini
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 interface Message {
@@ -21,7 +21,7 @@ const ChatBox: React.FC = () => {
     const userMessage: Message = { text: input, sender: "user" };
     setMessages((prev) => [...prev, userMessage]);
 
-    // Appel à l'API de Gemini avec entrée textuelle uniquement
+    // Appel à l'API de Gemini avec le prompt spécifique au rôle de coach fitness
     const botResponse = await fetchGeminiResponse(input);
 
     const botMessage: Message = { text: botResponse, sender: "bot" };
@@ -32,9 +32,28 @@ const ChatBox: React.FC = () => {
 
   const fetchGeminiResponse = async (prompt: string): Promise<string> => {
     try {
+      // Ajout du contexte de coach fitness directement dans le prompt
+      const promptInitialise = `You are a fitness coach. Only provide fitness advice, and your answer will be in French. If the question is not about fitness, your response should be sour and rude. Question: ${prompt}`;
+
       // Appel à l'API de génération de texte
-      const result = await model.generateContent(prompt);
-      return result.response.text(); // Renvoie la réponse du modèle
+      const result = await model.generateContent({
+        contents: [
+          {
+            role: "user",
+            parts: [
+              {
+                text: promptInitialise,
+              },
+            ],
+          },
+        ],
+        generationConfig: {
+          maxOutputTokens: 500, // Nombre de tokens maximum pour la réponse
+          temperature: 0.5, // Ajuste la créativité de la réponse
+        },
+      });
+
+      return result.response.text(); // Renvoie la réponse générée par Gemini
     } catch (error) {
       console.error("Erreur lors de la génération de texte :", error);
       return "Désolé, je n'ai pas pu générer de réponse.";
@@ -42,7 +61,7 @@ const ChatBox: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col max-w-md mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
+    <div className="flex flex-col w-full mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
       <div className="flex-1 overflow-y-auto mb-4">
         {messages.map((msg, index) => (
           <div
