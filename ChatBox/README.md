@@ -26,6 +26,7 @@ yarn
 ```
 
 ## Configuration
+
 Avant de lancer l'application, vous devez configurer votre clé API Google Gemini. Remplacez la chaîne de caractères CLE_API_GEMINI dans le fichier ChatBox.tsx par votre propre clé API.
 
 ```bash
@@ -39,8 +40,8 @@ Le code est basé sur **React** et utilise la bibliothèque **react-markdown** p
 ### `ChatBox.tsx`
 
 - **State Management** : Utilisation de `useState` pour gérer les messages du chat et l'entrée utilisateur.
-  
 - **handleSend** : Fonction appelée lorsqu'un utilisateur envoie un message. Elle :
+
   - Ajoute le message de l'utilisateur à la liste des messages.
   - Envoie la requête à l'API Gemini avec un prompt spécifique pour fournir des conseils fitness ou une réponse méchante si la question n'est pas en rapport avec le fitness.
   - Ajoute la réponse de l'IA à la liste des messages.
@@ -58,15 +59,16 @@ Les réponses du bot sont interprétées et affichées en Markdown grâce à la 
 Cela permet au bot de renvoyer des réponses formatées (titres, listes, emphases, etc.) dans l'interface.
 
 ## Lancement de l'application
+
 Une fois que tout est installé et configuré, vous pouvez lancer l'application en utilisant la commande suivante :
 
 ```bash
 yarn dev
 ```
 
-
 markdown
 Copier le code
+
 ## Structure du Code
 
 Le code est basé sur **React** et utilise la bibliothèque **react-markdown** pour interpréter les réponses de l'IA en Markdown. Voici une brève explication des composants :
@@ -74,8 +76,8 @@ Le code est basé sur **React** et utilise la bibliothèque **react-markdown** p
 ### `ChatBox.tsx`
 
 - **State Management** : Utilisation de `useState` pour gérer les messages du chat et l'entrée utilisateur.
-  
 - **handleSend** : Fonction appelée lorsqu'un utilisateur envoie un message. Elle :
+
   - Ajoute le message de l'utilisateur à la liste des messages.
   - Envoie la requête à l'API Gemini avec un prompt spécifique pour fournir des conseils fitness ou une réponse méchante si la question n'est pas en rapport avec le fitness.
   - Ajoute la réponse de l'IA à la liste des messages.
@@ -89,6 +91,7 @@ Les réponses du bot sont interprétées et affichées en Markdown grâce à la 
 ```javascript
 <ReactMarkdown>{msg.text}</ReactMarkdown>
 ```
+
 Cela permet au bot de renvoyer des réponses formatées (titres, listes, emphases, etc.) dans l'interface.
 
 Lancement de l'application
@@ -100,19 +103,26 @@ npm start
 Cela lancera le projet en mode développement. Ouvrez http://localhost:3000 pour voir l'application dans votre navigateur.
 
 ## Fonctionnalités
+
 - Coach de Fitness : Le bot répond aux questions sur le fitness et donne des conseils pertinents.
 - Réponses Méchantes : Si la question n'est pas liée au fitness, le bot répondra de manière désagréable et sarcastique.
 - Affichage Markdown : Les réponses du bot sont formatées en Markdown pour une meilleure lisibilité.
 
 ### Exemple d'utilisation
+
 - Question liée au fitness :
-    - Utilisateur : "Quels exercices puis-je faire pour améliorer mes abdominaux ?"
-    - Bot : "Pour des abdos en béton, fais des crunchs, des planches et des levées de jambes. Essaie d'en faire 3 séries de 15 répétitions chaque jour ! 💪"
+
+  - Utilisateur : "Quels exercices puis-je faire pour améliorer mes abdominaux ?"
+  - Bot : "Pour des abdos en béton, fais des crunchs, des planches et des levées de jambes. Essaie d'en faire 3 séries de 15 répétitions chaque jour ! 💪"
 
 - Question hors sujet :
+
   - Utilisateur : "Quel est le capital de la France ?"
   - Bot : "T’es sérieux là ? Je suis un coach sportif, pas un prof de géo. Demande-moi quelque chose d'utile !"
 
-  ----
+  ***
 
-  Ce fichier README.md explique le processus du code, la configuration et les fonctionnalités de l'application de chat basée sur un coach de fitness avec l'API Gemini.
+  Ce fichier README.md explique le processus du code, la configuration et les fonctionnalités de l'application de chat basée sur un coach de fitness avec l'API Gemini. (D'autres prompts sont égalements disponibles)
+
+
+![alt text](image.png)

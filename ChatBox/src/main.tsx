@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   // @ts-ignore
   <React.StrictMode>
     <div className="h-screen w-screen border-2 border-black flex item-center">
-    <ChatBox />
+      <ChatBox />
     </div>
   </React.StrictMode>
 );
