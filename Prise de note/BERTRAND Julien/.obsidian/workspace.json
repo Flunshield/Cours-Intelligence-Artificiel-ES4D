@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning Pipeline.md",
+                "file": "Prise de note/Machine Learning Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SageMaker.md",
+                "file": "Prise de note/SageMaker.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Amazon Forecast.md",
+                "file": "Prise de note/Amazon Forecast.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,7 +59,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning Pipeline.md",
+                "file": "Prise de note/Machine Learning Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -71,14 +71,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning Pipeline.md",
+                "file": "Prise de note/Matrice de confusion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a11be0a844a4e1e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TP LAB/Lab 3.5.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -144,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning Pipeline.md",
+                "file": "TP LAB/Lab 3.5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning Pipeline.md",
+                "file": "TP LAB/Lab 3.5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning Pipeline.md"
+                "file": "TP LAB/Lab 3.5.md"
               }
             }
           }
@@ -205,19 +217,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "74a98a13c096f36c",
+  "active": "a11be0a844a4e1e6",
   "lastOpenFiles": [
+    "TP LAB/Lab 3.4.md",
+    "TP LAB/Lab 3.5.md",
+    "Prise de note/Résumé du module.md",
+    "Sensibilité des models.md",
+    "Pasted image 20240925094951.png",
+    "Pasted image 20240925094929.png",
+    "Prise de note/Matrice de confusion.md",
+    "Pasted image 20240925094820.png",
+    "Prise de note/SageMaker.md",
+    "Pasted image 20240925093840.png",
+    "Prise de note/Machine Learning Pipeline.md",
+    "TP LAB/Lab 3.3.md",
+    "Prise de note/Introduction.md",
+    "Pasted image 20240925091004.png",
+    "TP LAB/Lab 3.2.md",
+    "Prise de note/Sefl-Drving Vehicule.md",
+    "Prise de note",
+    "TP LAB/LAB 3.1.md",
+    "TP LAB",
     "Images/Pasted image 20240924092303.png",
     "Images/Pasted image 20240923112114.png",
     "Images/Pasted image 20240923111031.png",
     "Images/Pasted image 20240923105337.png",
-    "Machine Learning Pipeline.md",
-    "Amazon Rekognition.md",
-    "SageMaker.md",
-    "Sefl-Drving Vehicule.md",
-    "L'IA par renforcement.md",
-    "Amazon Forecast.md",
-    "Introduction.md",
+    "Prise de note/Amazon Rekognition.md",
+    "Prise de note/L'IA par renforcement.md",
+    "Prise de note/Amazon Forecast.md",
     "Images/screen.md",
     "Images.md",
     "Images"

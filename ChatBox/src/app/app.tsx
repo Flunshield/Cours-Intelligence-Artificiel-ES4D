@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import clsx from "clsx";
 
 // Configure l'API avec ta clé
-const genAI = new GoogleGenerativeAI("GET_YOUR_API_KEY"); // Clé API Gemini
+const genAI = new GoogleGenerativeAI("AIzaSyBU5WHvV6I7KxJyyWYoKWLs930-YqatyNA"); // Clé API Gemini
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 interface Message {

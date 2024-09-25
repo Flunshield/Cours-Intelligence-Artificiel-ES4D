@@ -76,3 +76,4 @@ estimator.fit({'train': 's3://chemin-des-données-d-entrainement'})
 6. **Utilisation de SageMaker Studio** : [SageMaker Studio est un environnement de développement intégré qui permet de gérer l’ensemble du cycle de vie du machine learning, de la préparation des données à la surveillance des modèles, via une interface utilisateur complète](https://datascientest.com/aws-sagemaker-tout-savoir)[1](https://datascientest.com/aws-sagemaker-tout-savoir).
 
 Ces fonctionnalités permettent aux entreprises d’accélérer le développement de leurs projets de machine learning tout en réduisant les coûts et en améliorant l’efficacité opérationnelle.
+
