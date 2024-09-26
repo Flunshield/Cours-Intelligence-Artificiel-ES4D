@@ -1,6 +1,6 @@
 ### Introduction au Machine Learning Pipeline
 
-![[Pasted image 20240924092303.png]]
+![Images/Pasted image 20240924092303.png](<../Images/Pasted image 20240924092303.png>)
 
 Un **machine learning pipeline** est un processus structuré qui permet de résoudre un problème de machine learning de manière systématique, en passant par différentes étapes de la préparation des données jusqu'au déploiement du modèle. Cette image présente les différentes sections d'un pipeline de machine learning et leur interconnexion.
 ### Compréhension du pipeline de machine learning
