@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "e1c86492ee92c748",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dea7e6b55e13fb9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d5d06dcb4ff6d79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programmation/Technologies/Machine Learning - Intelligence Artificiel.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bc720a48dd20b546",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf215e3b6601a7a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "494204ab7a05bf10",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "598be8e8bee34bfd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "336df5c15b4c0a0e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "54f7e2983ab53288",
+    "type": "split",
+    "children": [
+      {
+        "id": "99712e60fc6f8237",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19346623c9dd49b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "afa992f822bc17e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Programmation/Technologies/Machine Learning - Intelligence Artificiel.md"
+              }
+            }
+          },
+          {
+            "id": "0e8845c629a98bb6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Programmation/Technologies/Machine Learning - Intelligence Artificiel.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5fd6086d438614ea",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Programmation/Technologies/Machine Learning - Intelligence Artificiel.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:Créer une nouvelle toile": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "5d5d06dcb4ff6d79",
+  "lastOpenFiles": [
+    "Sans titre.md",
+    "Programmation/Technologies/Machine Learning - Intelligence Artificiel.md",
+    "machineLearningpng.md",
+    "Image utilisé/Machine-learning-def-.png",
+    "machine.md",
+    "Pasted image 20240926102211.png",
+    "Image utilisé/machineLearning.png",
+    "Image utilisé/recapIA.png",
+    "Mise en forme Obsidian.md",
+    "Machine learning.md",
+    "Tesseire.md",
+    "Pasted image 20240926093537.png",
+    "Image utilisé/20230530_102832.jpg",
+    "Pasted.md",
+    "Pasted image 20240926091907.png",
+    "Inetum/Client Antargaz/Identifiant de connexion.md",
+    "Inetum/Client Antargaz/Procédure AZ TMA.md",
+    "Inetum/Client Antargaz/SOX CC2 Manquant.md",
+    "Inetum/Client Antargaz/SOX Procédure.md",
+    "Projet/Code Arena.md",
+    "Projet/Porfolio 2.0.md",
+    "Second Cerveau.md",
+    "Programmation/Pasted image 20240716171759.png",
+    "Communication Business Plan.md",
+    "Programmation/Langages/Html & CSS.md",
+    "Inetum/Client Antargaz/Mantis attribué.md",
+    "Inetum/Client Antargaz/Antargaz.md",
+    "A faire (to do list).md",
+    "Programmation/Technologies/Réalité Virtuel.md",
+    "Programmation/Technologies/React.md",
+    "Programmation/Langages/SQL.md",
+    "Programmation/Langages/Git.md",
+    "Programmation/Langages/C Sharp.md",
+    "Refonte graphique.md",
+    "Inetum/Mobeex/Item transfer shéma logique.canvas",
+    "Pasted image 20240515215157.png",
+    "Pasted image 20240515220450.png",
+    "Sans titre.canvas",
+    "UML Singleton.canvas",
+    "UML Decorator.canvas",
+    "UML Chain of responsability.canvas",
+    "UML Builder.canvas",
+    "Sans titre 1.canvas",
+    "Isitech/Technologies",
+    "Programmation/Technologies",
+    "Programmation/Langages",
+    "Inetum/Formation",
+    "Inetum/Mobeex",
+    "Inetum/Client Revima",
+    "Inetum/Client Antargaz",
+    "Sans titre 3.canvas",
+    "Sans titre 4.canvas",
+    "Sans titre 5.canvas",
+    "Image utilisé/assets"
+  ]
+}
