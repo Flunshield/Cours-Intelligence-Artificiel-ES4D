@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TP LAB/Lab 3.5.md",
+                "file": "TP LAB/Lab 3.7.md",
                 "mode": "source",
                 "source": false
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TP LAB/Lab 3.5.md",
+                "file": "TP LAB/Lab 3.7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TP LAB/Lab 3.5.md",
+                "file": "TP LAB/Lab 3.7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TP LAB/Lab 3.5.md"
+                "file": "TP LAB/Lab 3.7.md"
               }
             }
           }
@@ -219,8 +219,13 @@
   },
   "active": "a11be0a844a4e1e6",
   "lastOpenFiles": [
-    "TP LAB/Lab 3.4.md",
+    "Pasted image 20240925145846.png",
+    "Pasted image 20240925145833.png",
+    "Prise de note/Machine Learning Pipeline.md",
+    "TP LAB/Lab 3.7.md",
+    "TP LAB/Lab 3.6.md",
     "TP LAB/Lab 3.5.md",
+    "TP LAB/Lab 3.4.md",
     "Prise de note/Résumé du module.md",
     "Sensibilité des models.md",
     "Pasted image 20240925094951.png",
@@ -229,7 +234,6 @@
     "Pasted image 20240925094820.png",
     "Prise de note/SageMaker.md",
     "Pasted image 20240925093840.png",
-    "Prise de note/Machine Learning Pipeline.md",
     "TP LAB/Lab 3.3.md",
     "Prise de note/Introduction.md",
     "Pasted image 20240925091004.png",
