@@ -1,6 +1,7 @@
-![[Pasted image 20240925094929.png]]
+![!\[\[Pasted image 20240925094929.png\]\]](<Images/Pasted image 20240925094929.png>)
 
-![[Pasted image 20240925094951.png]]
+![alt text](<Images/Pasted image 20240925094951.png>)
+
 **Qu'est-ce que la sensibilité ?**
 
 La sensibilité, également appelée taux de vrais positifs (TPR), mesure la capacité d'un modèle à identifier correctement tous les exemples positifs d'une classe donnée. Dans notre cas, il s'agit de la capacité du modèle à identifier correctement tous les chats.

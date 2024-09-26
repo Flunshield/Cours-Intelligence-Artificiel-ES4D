@@ -1,5 +1,6 @@
-![[Pasted image 20240925093840.png]]
 ### Qu'est-ce qu'une matrice de confusion ?
+
+![alt text](<../Images/Pasted image 20240925093840.png>)
 
 C'est un tableau qui compare les valeurs réelles (ou _actual_ en anglais) d'une variable catégorielle avec les valeurs prédites par un modèle. Elle est particulièrement utile pour les problèmes de classification binaire (deux classes, comme "chat" ou "pas chat" dans ton exemple), mais peut être étendue à des problèmes multi-classes.
 

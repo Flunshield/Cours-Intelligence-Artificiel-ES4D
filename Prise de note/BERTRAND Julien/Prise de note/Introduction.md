@@ -1,5 +1,6 @@
+# Introduction
 
-![[Pasted image 20240925091004.png]]
+![!\[\[Pasted image 20240925091004.png\]\]](<../Images/Pasted image 20240925091004.png>)
 
 L'intelligence artificielle (IA) est une branche de l'informatique qui vise à créer des systèmes capables d'exécuter des tâches requérant normalement l'intelligence humaine. Ces tâches incluent la reconnaissance visuelle, la prise de décision, le traitement du langage naturel, et l'apprentissage automatique.
 
