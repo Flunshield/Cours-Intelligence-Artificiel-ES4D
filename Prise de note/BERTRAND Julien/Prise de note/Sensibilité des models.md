@@ -1,6 +1,6 @@
-![!\[\[Pasted image 20240925094929.png\]\]](<Images/Pasted image 20240925094929.png>)
+![Images/Pasted image 20240925094929.png](<../Images/Pasted image 20240925094929.png>)
 
-![alt text](<Images/Pasted image 20240925094951.png>)
+![Images/Pasted image 20240925093840.png](<../Images/Pasted image 20240925093840.png>)
 
 **Qu'est-ce que la sensibilité ?**
 
